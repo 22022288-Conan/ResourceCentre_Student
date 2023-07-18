@@ -11,6 +11,10 @@ public class Item {
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
+	
+	public String toString() {
+		String ItemInfo = String.format("%-10s %-30s %-10s %-10s", assetTag, description, showAvailability(isAvailable), dueDate);
+	}
 
 	public String getAssetTag() {
 		return assetTag;
